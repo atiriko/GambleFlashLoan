@@ -1,0 +1,240 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_reserve",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_fee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_params",
+						"type": "bytes"
+					}
+				],
+				"name": "executeOperation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fallback",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_asset",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "flashloan",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenIn",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_tokenOut",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountIn",
+						"type": "uint256"
+					}
+				],
+				"name": "getAmountOutMin",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenIn",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_tokenOut",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountOutMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "swap",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unilendFlashLoanCore",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenContract",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/UnilendFlashLoan.sol": "Flashloan"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/IERC20.sol": {
+			"keccak256": "0x615820d862015d454eabd86a1c868c5d4849b3b27e526974d14db312b18d0d54",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c2f94d75a59c6e36a4bdb193b92ab3d4e18d5a52f0d99a09613847b7df7851bd",
+				"dweb:/ipfs/Qmb8RW6XYwYfVjxy8BV4pxgeXvxYmreJFs8SGFsE9JkVu9"
+			]
+		},
+		"contracts/PolyInterface.sol": {
+			"keccak256": "0xcaf84cc5d0eec423e31d79f185a0cc851ed069282f3d147438ab71a9b936766d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://20d3513eadd7381ca785e2528f977bdc8fc9348517a2212929580c667d3108ed",
+				"dweb:/ipfs/QmVVUcWkU32WKNxjgdBMnU2W6qLTiYhRJEfhKF1HcpFvBi"
+			]
+		},
+		"contracts/TokenSwap.sol": {
+			"keccak256": "0x3c91fe404ff8b20681cf8fc6103007637b3199c1c5b4a29cbc9a3f8363439a25",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a46bb98fa6951b97d340281334d7d36744b51aacf739766ddf78e4d861e8c2dd",
+				"dweb:/ipfs/QmTzzj9E6ZzKPEyg5JH6SuT56H5QHGzn91xVkwVUKzY1Ui"
+			]
+		},
+		"contracts/UnilendFlashLoan.sol": {
+			"keccak256": "0xc32e3129599db12f96c109d3dba21020b38cab9ba02d266ee53bce689fcc6387",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4ac9832f983342a27132d6daf221e826cafd6c72384561eac9d8bae72b9e94a1",
+				"dweb:/ipfs/Qmd53MLu6gshrNNvEZqfwbjxbivJmhe5SdN7WVC266Ds6s"
+			]
+		},
+		"contracts/UnilendFlashLoanReceiverBase.sol": {
+			"keccak256": "0x81bb3239eed4b0637b46e30343c8d25ddb6a8b5ceaa093172a7d29889f53d30d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://21f5f7b412a3cf0a81f341ef065ed4d4644bfb8e17a17b26a3eb26a1101b27bd",
+				"dweb:/ipfs/Qma3GNex5GHtZ5tMAzEAoaNoutdzN4fiqyXiQXrXRYPEae"
+			]
+		}
+	},
+	"version": 1
+}
